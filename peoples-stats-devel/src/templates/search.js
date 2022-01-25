@@ -63,9 +63,6 @@ const Search = class {
       .then((response) => {
         this.dataResults = response.data.results;
         this.el.innerHTML = this.render(this.dataResults);
-      }).catch((error) => {
-        // handle error
-        console.log(error);
       });
   }
 };
